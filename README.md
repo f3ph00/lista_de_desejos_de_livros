@@ -20,6 +20,7 @@ Para que a aplicação funcione corretamente, você precisa configurar o acesso 
 
 1.  Navegue até o arquivo: `src/main/resources/application.properties`
 2.  Edite as propriedades de conexão conforme necessário. O H2 é um banco de dados em memória, então geralmente a configuração padrão já funciona para desenvolvimento.
+3.  Para inspecionar o banco de dados e suas propriedades, você pode acessar o **console do H2** em: `http://localhost:8080/h2-console`
 
 ---
 
