@@ -4,13 +4,15 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table(name = "tb_cadastro")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Livro {
+@ToString
+public class LivroModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")

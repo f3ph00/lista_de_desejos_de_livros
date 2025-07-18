@@ -1,7 +1,9 @@
 package com.fepho.lista_desejos_livros.repository;
 
-import com.fepho.lista_desejos_livros.model.Livro;
+import com.fepho.lista_desejos_livros.model.LivroModel;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface LivroRepository extends JpaRepository<Livro, Long> {
+@Repository
+public interface LivroRepository extends JpaRepository<LivroModel, Long> {
 }

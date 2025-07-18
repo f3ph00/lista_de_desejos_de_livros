@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterar Livro</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+           background-color: #f4f4f4;
+           margin: 0;
+           padding: 20px;
+       }
+
+       h1 {
+           text-align: center;
+           color: #333;
+       }
+
+       .form-container {
+           background-color: white;
+           border-radius: 8px;
+           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+           padding: 20px;
+           max-width: 400px;
+           margin: auto;
+       }
+
+       label {
+           margin: 10px 0 5px;
+           display: block;
+       }
+
+       input {
+           width: 100%;
+           padding: 10px;
+           margin-bottom: 15px;
+           border: 1px solid #ddd;
+           border-radius: 4px;
+       }
+
+       button {
+           padding: 10px 15px;
+           border: none;
+           border-radius: 5px;
+           background-color: #4CAF50;
+           color: white;
+           cursor: pointer;
+           transition: background-color 0.3s;
+           width: 100%;
+       }
+
+       button:hover {
+           background-color: #45a049;
+       }
+
+       .mensagem {
+           color: green;
+           text-align: center;
+           margin-bottom: 20px;
+       }
+
+       a {
+           display: inline-block;
+           margin-top: 10px;
+           text-decoration: none;
+           color: #4CAF50;
+           transition: color 0.3s;
+       }
+
+       a:hover {
+           color: #45a049;
+       }
+    </style>
+</head>
+<body>
+<h1>Alterar Livro</h1>
+
+<form th:action="@{/livros/ui/alterar/{id}(id=${livro.id})}" th:object="${livro}" method="post">
+    <input type="hidden" th:field="*{id}" />
+
+    <label for="titulo">Titulo:</label>
+    <input type="text" id="titulo" th:field="*{titulo}" required />
+
+    <label for="autor">autor:</label>
+    <input type="text" id="autor" th:field="*{autor}" required />
+
+    <!-- Adicione outros campos conforme o DTO -->
+
+    <button type="submit">Salvar</button>
+</form>
+
+<a th:href="@{/livros/ui/listar}">Voltar</a>
+</body>
+</html>
