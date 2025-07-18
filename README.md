@@ -1,4 +1,6 @@
-#Livro na Lista: Sua Lista de Desejos de Livros
+No problem! Here's your README.md with the necessary Markdown applied to make it clear and well-structured:
+
+Livro na Lista: Sua Lista de Desejos de Livros
 Descrição
 Livro na Lista é uma aplicação Java intuitiva que permite aos usuários gerenciar sua lista de livros desejados. Perfeito para quem adora ler e quer manter o controle de futuras aquisições!
 
@@ -34,4 +36,3 @@ Abra o projeto em sua IDE favorita (IntelliJ IDEA, Eclipse, VS Code, etc.).
 Execute a classe principal da aplicação (geralmente SuaAplicacaoApplication.java se você usou o Spring Initializr, ou o nome que você deu ao seu arquivo principal).
 
 Acesse a aplicação no seu navegador em http://localhost:8080 (ou a porta configurada).
-
