@@ -1,4 +1,4 @@
-Livro na Lista: Sua Lista de Desejos de Livros
+#Livro na Lista: Sua Lista de Desejos de Livros
 Descrição
 Livro na Lista é uma aplicação Java intuitiva que permite aos usuários gerenciar sua lista de livros desejados. Perfeito para quem adora ler e quer manter o controle de futuras aquisições!
 
